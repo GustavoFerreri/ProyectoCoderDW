@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Estilos-->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--script-->
+    <script src="js/funciones.js" charset="utf-8"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+    <!--Titulo-->
+    <title>Vantaggio</title>
+    <link rel="icon" href="img/Iconowebvantaggio.png" type="image/png">
+</head>
+<body>
+    <div class="contenido">
+        <header>
+                <div class="logo"><img src="img/vantaggetarjeta.jpg" alt="" class="imglogo" onclick="visible('otro');"></div>
+                <nav>
+                      <a href="#" onclick="visible('destino', '1');">Quienes somos</a>
+                      <a href="#" onclick="visible('destino', '2');">Servicios</a>
+                      <a href="#" onclick="visible('destino', '3');">Contacto</a>
+                </nav>
+        </header>
+        <section class="awSlider" id="awSlider">
+            <div  class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active"><img src="img/Sectioncarrusel1.jpg"><div class="carousel-caption"></div></div>
+                        <div class="item"><img src="img/Sectioncarrusel2fix.jpg"> <div class="carousel-caption"></div></div>
+                        <div class="item"><img src="img/Sectioncarrusel3.jpg"> <div class="carousel-caption"></div></div>
+                        <div class="item"><img src="img/Sectioncarrusel4.jpg"><div class="carousel-caption"></div></div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Geri</span>
+                    </a>
+                    <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">İleri</span>
+                    </a>
+            </div>
+            <div class="destino" id="destino" >
+                <div class="quienes" id="quienes"><p><b>VANTAGGIO</b> surge de la traducción al italiano de Beneficio, este orientado y haciendo foco en el cliente tanto interno como externo.</p><br>
+                    <p>Somos una empresa con esencia familiar, donde nuestros pilares son los <b>valores</b>, el <b>trabajo</b>, <b>dedicación</b> y <b>pasión</b> con que desarrollamos nuestra actividad.                    
+                    Nuestros servicios se ven concentrados en coberturas de Seguros,  ART ambas provistas por las empresas mejor posicionadas en el rubro, e Inversiones permitiendo que el cliente pueda acceder a instrumentos del mercado de valores, a través de una sociedad de bolsa de la más prestigiosas del país accediendo al mercado local e internacional.</p><br>  
+                    <p>Operamos bajo la orbita de Real planing SA. Sociedad de productores asesores de seguros, ley 22.400, matrícula 1389.</p> 
+                    <p><b>Visión</b></p> 
+                    <p>Sentar las bases de trabajo en Córdoba, consolidando a <b>Vantaggio</b> en base a educación, planificación y asesoramiento.</p>
+                    <p><b>Misión</b></p> 
+                    <p>Estamos comprometidos desde nuestras bases en mejorar la calidad de vida de nuestros clientes.</p>
+                    <p><b>Valores</b></p> 
+                    <p>Trabajo, dedicacion y pasión por lo que hacemos.</p>
+                </div>
+                <div class="servicios" id="servicios">
+                    <p>Cobertura sobre bienes</p>
+                    <p>
+                        <ul>
+                            <li>Accidentes personales</li>
+                            <li>Auto</li>
+                            <li>Combinado familiar</li>
+                            <li>Integrales comercio</li>
+                            <li>Integrales consorcio</li>
+                            <li>Embarcaciones</li>
+                            <li>Mala praxis</li>
+                            <li>Motos</li>
+                        </ul>
+                    </p>
+                    <p>Inversiones</p>
+                    <p>
+                        <ul>
+                            <li>Inversiones Bursátiles</li>
+                            <li>Seguro de vida</li>
+                        </ul>
+                    </p>
+                    <p>ART</p>
+                </div>
+                <div class="contacto" id="contacto">
+                    <ul>
+                        <li><a href="https://www.instagram.com/vantaggio.cordoba" target="_blank"><i class="fab fa-instagram"></i> @vantaggio.cordoba</a></li>
+                        <li><a href="https://www.facebook.com/vantaggio.cordoba" target="_blank"><i class="fab fa-facebook-square"></i>@vantaggio.cordoba</a> </li>
+                        <li><a href="https://twitter.com/Vantaggio_cba?lang=es" target="_blank"><i class="fab fa-twitter-square"></i> @vantaggio_cba</a></li>
+                        <li><a href="mailto:consultas@vantaggio.com.ar " target="_blank"><i class="fas fa-envelope-square"></i> consultas@vantaggio.com.ar</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5493516711413&text=Necesitamos contactar con usted" target="_blank"><i class="fab fa-whatsapp-square"></i> +54 9 351 6711413</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="base" id="base">
+            <div class="boton"><div class="titulo">Seguros</div>
+                <span class="leyenda"><p>Ofrecemos cobertura acorde
+                    a cada necesidad, casa, auto, comercio,
+                    vida, mala praxis y más. Todas las pólizas
+                    emitidas por las principales compañias de
+                    seguros. Solicite su cotización.</p></span>
+            </div>
+            <div class="boton"><div class="titulo">ART</div>
+                <span class="leyenda"><p>Brindamos cobertura
+                    para accidentes laborales
+                    reduciendo costos, permitiendo optimizar
+                    y mejorar los beneficios de su empresa.
+                    Contactenos para mas información.</p></span>
+            </div>
+            <div class="boton"><div class="titulo">Inversión</div>
+                <span class="leyenda"><p>Trabajamos desde las bases educando
+                    y fomentando el ahorro mediante el camino
+                    de la inversión, ofreciendo productos
+                    acordes a cada inversor, tomando en cuenta
+                    tiempo, riesgo y objetivo. Consúltenos.</p></span>
+            </div>
+        </footer>
+    </div>   
+</body>
+</html>
