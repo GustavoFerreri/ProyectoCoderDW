@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo de la web -->
+    <title>Asterix Computación</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="shortcut icon" type="image/ico" href="../img/asterixLogo.png" />
+    <!-- Cargamos hoja de estilo bootstrap CDN-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Cargamos JS Bootstrap CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-dark">
+    <header class="container-fluid text-light bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="float-left">
+          <button
+            class="navbar-toggler ml-auto p-2"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img
+            src="../img/asterixLogo.png"
+            class="rounded float-left d-none d-lg-block smallImg"
+            alt=""
+          />
+          <a class="navbar-brand mr-auto"
+            ><h1 class="titleWeb">Asterix computación</h1></a
+          >
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto p-2">
+            <li class="nav-item active">
+              <a href="../index.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href=""
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Catalogo</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="accesorios.html">Accesorios</a>
+                <a class="dropdown-item" href="perifericos.html">Perifericos</a>
+                <a class="dropdown-item" href="monitores.html">Monitores</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="quienes.html" class="nav-link">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a href="contacto.html" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid text-light bg-secondary">
+      <div class="container bg-secondary">
+        <span class="display-4">Contacto</span>
+        <div class="form-group">
+          <form>
+            <div class="form-group">
+              <label for="nombre" class="main__contactForm--label">Name</label>
+              <input type="text" name="nombre" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="main__contactForm--label">Email</label>
+              <input type="email" name="email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="consulta " class="main__contactForm--label"
+                >Seccion</label
+              >
+              <select name="consulta" class="form-control form-control-sm">
+                <option value="Perifericos" class="main__contactForm--option">
+                  Perifericos
+                </option>
+                <option value="Monitores" class="main__contactForm--option">
+                  Monitores
+                </option>
+                <option value="Accesorios" class="main__contactForm--option">
+                  Accesorios
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-check-label">Motivo</label><br />
+              <div class="container">
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="Compra"
+                    class="form-check-input"
+                  />
+                  <label for="Compra" class="form-check-label">Compra</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="Devolucion"
+                    class="form-check-input"
+                  />
+                  <label for="Devolucion" class="form-check-label"
+                    >Devolución</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="Reclamo"
+                    class="form-check-input"
+                  />
+                  <label for="Reclamo" class="form-check-label">Reclamo</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="Sugerencia"
+                    class="form-check-input"
+                  />
+                  <label for="Sugerencia" class="form-check-label"
+                    >Sugerencia</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="comentario" class="form-check-label"
+                >Comentario</label
+              >
+              <textarea
+                type="text"
+                name="comentario"
+                class="form-control"
+              ></textarea>
+            </div>
+            <input type="submit" name="submit" class="btn btn-primary" />
+            <input type="reset" name="reset" class="btn btn-primary" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid text-light bg-dark">
+      <div class="col-lg-12 text-center">Contacto: Tel 9999-9999</div>
+    </footer>
+  </body>
+</html>

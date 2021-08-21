@@ -1,72 +1,257 @@
+<!-- 
+  Web: asterixcomputacion.com.ar
+  Idea: web de ventas de insumos para PC
+  Alumno: Ferreri, Gustavo
+  Tutora: Loana, Torres
+  Camada: 16655
+  Curso: Desarrollo Web
+  Desafio 2: Estructura basica
+  Desafio 3: Estructura Html del proyecto
+    - Tablas, con listas anidadas en basic.html
+    - perifericos.html, accesorios.html, accesorios.html 
+      sin cambios de la idea original
+    - Formularios, checkbox, desplegable, boton enviar y reset
+      en contacto.html
+    - FIX Se elimina iframe, agregando contenido de navegacion 
+      en cada html
+  Desafio 4: Agregando css a nuestro html
+    - Update al archivo original, agregando css e imagenes
+  Desafio 5 (complementario): Asignando Estilos
+    - Se agrega el titulo de la web
+    - Update, se acomoda todo el html y css para usar BEM
+    - Agrupados estilos en Style.css
+    - Colores en cabecera y pie
+    - Normalizado de medidas a em, y a viewport
+    - Documentacion en html y css
+  Desafio 6 (complementario)
+    - Bordes en header, footer
+  Pre entrega
+    - Se elimina bordes en header en costado y superior
+  Desafio 8
+    - (FlexBox)
+    - Se rehace el header
+    - Navbar con flexbox
+    - update al resto de archivos con el mismo header
+  Desafio 9 
+    - (Grid)
+    - Se implementa grid en toda la web 1 columna 3 filas
+    - Adaptamos el contenido al nuevo framework
+  Desafio 10 y 2da entrega:
+    - En esta etapa se cumple con los requisitos, se cambia la paleta de colores.
+      transiciones, y transformaciones en menu, se agrega contenido, se completa detalles 
+      como rellenar alt, se reviso el codigo por faltantes de etiquetas, por ultimo 
+      asegurarse que los links respondan correctamente.
+  Desafio 11 y 12:
+    - Se reorganica toda la web con bootstrap
+    - Aplicamos funcionalidades responsive, sobre todo en lo que refiere a funcionalidad y navegacion
+    - reformulamos el menu utilizando Dropdown
+    - Cambiamos la manera de enfocar cada html
+  -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Titulo web -->
+    <!-- Titulo de la web -->
     <title>Asterix Computación</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/ico" href="img/asterixLogo.png" />
-    <!-- Cargamos hoja de estilo -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" type="image/ico" href="img/asterixLogo.png" />
+    <!-- Cargamos hoja de estilo bootstrap CDN-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Cargamos JS Bootstrap CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <!-- Contenedor -->
-    <div class="container">
-      <!-- Cabecera -->
-      <div class="container__header">
-        <!-- Logo -->
-        <div class="container__headerLogo">
-          <img src="" alt="" class="container__headerLogo--img" />
+  <body class="bg-dark">
+    <header class="container-fluid text-light bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="float-left">
+          <button
+            class="navbar-toggler ml-auto p-2"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img
+            src="img/asterixLogo.png"
+            class="rounded float-left d-none d-lg-block smallImg"
+            alt=""
+          />
+          <a class="navbar-brand mr-auto"
+            ><h1 class="titleWeb">Asterix computación</h1></a
+          >
         </div>
-        <!-- Titulo -->
-        <div class="container__headerTitle">
-          <h1 class="container__headerTitle--text">Asterix Computación</h1>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto p-2">
+            <li class="nav-item active">
+              <a href="" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href=""
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Catalogo</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="html/accesorios.html"
+                  >Accesorios</a
+                >
+                <a class="dropdown-item" href="html/perifericos.html"
+                  >Perifericos</a
+                >
+                <a class="dropdown-item" href="html/monitores.html"
+                  >Monitores</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="html/quienes.html" class="nav-link">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a href="html/contacto.html" class="nav-link">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <!-- Barra de navegacion por menu -->
-        <div class="container__headerNav">
-          <div class="container__headerNavText">
-            <nav>
-              <ul class="container__headerNavTextBar">
-                <li class="container__headerNavTextBar--item">
-                  <a href="" class="container__headerNavTextBar--link"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="container__headerNavTextBar--item">
-                  <a class="container__headerNavTextBar--link">Catalogo</a>
-                  <ul class="container__headerNavTextBar--drop">
-                    <li><a href="">Accesorios</a></li>
-                    <li><a href="">Perifericos</a></li>
-                    <li><a href="">Monitores</a></li>
-                  </ul>
-                </li>
-                <li class="container__headerNavTextBar--item">
-                  <a href="" class="container__headerNavTextBar--link"
-                    >Quienes Somos</a
-                  >
-                </li>
-                <li class="container__headerNavTextBar--item">
-                  <a href="" class="container__headerNavTextBar--link"
-                    >Contacto</a
-                  >
-                </li>
-              </ul>
-            </nav>
+      </nav>
+    </header>
+    <main class="container-fluid text-light bg-secondary">
+      <div class="container">
+        <span class="display-4">Inicio</span>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <img
+              src="img/tecladoMouseReddragon.png"
+              alt="Promo red dragon"
+              class="img-responsive"
+              width="100%"
+            />
+            <ul class="list-group list-group-flush">
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  font-weight-bold
+                  list-group-item-action
+                  active
+                "
+              >
+                Promo1
+              </li>
+              <li class="list-group-item list-group-item-dark font-weight-bold">
+                100 U$D
+              </li>
+              <li
+                class="list-group-item list-group-item-dark font-weight-normal"
+              >
+                Red Dragon
+              </li>
+              <li
+                class="list-group-item list-group-item-dark font-weight-light"
+              >
+                Combo Teclado, Mouse, Auricular, y Pad
+              </li>
+            </ul>
           </div>
-          <div class="container__headerNavIcon"></div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <img
+              src="img/tecladoMouseLogitech.png"
+              alt=""
+              class="img-responsive"
+              width="100%"
+            />
+            <ul class="list-group list-group-flush">
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  font-weight-bold
+                  list-group-item-action
+                  active
+                "
+              >
+                Promo 2
+              </li>
+              <li class="list-group-item list-group-item-dark font-weight-bold">
+                120 U$D
+              </li>
+              <li
+                class="list-group-item list-group-item-dark font-weight-normal"
+              >
+                Logitech
+              </li>
+              <li
+                class="list-group-item list-group-item-dark font-weight-light"
+              >
+                Combo Teclado, Mouse, Auricular, y Pad
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <img
+              src="img/tecladoMousegenerico2.png"
+              alt=""
+              class="img-responsive"
+              width="100%"
+            />
+            <ul class="list-group list-group-flush">
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  font-weight-bold
+                  list-group-item-action
+                  active
+                "
+              >
+                Promo 3
+              </li>
+              <li class="list-group-item list-group-item-dark font-weight-bold">
+                25 U$D
+              </li>
+              <li
+                class="list-group-item list-group-item-dark font-weight-normal"
+              >
+                Noga
+              </li>
+              <li
+                class="list-group-item list-group-item-dark font-weight-light"
+              >
+                Combo Teclado, Mouse, Auricular, y Pad
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <!-- Cuerpo -->
-      <div class="main">
-        <!--  -->
-        <div class=""></div>
-        <div class=""></div>
-      </div>
-      <!-- Pie -->
-      <div class="footer"></div>
-    </div>
+    </main>
+    <footer class="container-fluid text-light bg-dark">
+      <div class="col-lg-12 text-center">Contacto: Tel 9999-9999</div>
+    </footer>
   </body>
 </html>
