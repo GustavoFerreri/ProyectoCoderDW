@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.smallImg {
+  width: 8vw;
+  max-height: 15vh;
+}
+.titleWeb {
+  font-family: Righteous;
+  font-size: 5vw;
+}
+main > .container {
+  min-height: 80vh;
+}
+
+.main__textAbout {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  &--article {
+    font-size: 2vw;
+    padding: 3%;
+    @media (max-width: 360px) {
+      font-size: 4vw;
+    }
+  }
+}
+
+.listItem {
+  list-style: outside;
+  &--Text {
+    font-size: 0.9em;
+  }
+}

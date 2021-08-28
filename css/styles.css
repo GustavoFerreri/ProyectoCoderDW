@@ -3,20 +3,36 @@
   width: 8vw;
   max-height: 15vh;
 }
+
 .titleWeb {
   font-family: Righteous;
   font-size: 5vw;
 }
+
 main > .container {
   min-height: 80vh;
 }
 
-.main__textAbout--article {
+.main__textAbout {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main__textAbout--article {
   font-size: 2vw;
   padding: 3%;
 }
+
+@media (max-width: 360px) {
+  .main__textAbout--article {
+    font-size: 4vw;
+  }
+}
+
 .listItem {
-  font-size: 0.9em;
   list-style: outside;
 }
+
+.listItem--Text {
+  font-size: 0.9em;
+}
+/*# sourceMappingURL=styles.css.map */
