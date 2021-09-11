@@ -46,12 +46,24 @@
     - Aplicamos funcionalidades responsive, sobre todo en lo que refiere a funcionalidad y navegacion
     - reformulamos el menu utilizando Dropdown
     - Cambiamos la manera de enfocar cada html
-  Desafio: 2da entrega proyecto final, Sass & Sass 2
+  Desafio: 3ra entrega proyecto final, Sass & Sass 2
     - Se corrige se coloca hoja de estilo por debajo de la carga de bootstrap
     - Se corrige Carga de JS a posterior carga de body
     - Se aplica sass
-    - utilizamos Bem En bloques especificos
+    - utilizamos Bem En bloques específicos
     - Las web se orienta a responsive en todas sus paginas
+  Desafio: 4ta entrega Proyecto Final, Seo
+    - Se agrega descripcion 
+    - Se rellena campos alt de imagenes que faltaban
+    - Se comprimen imagenes a traves de tinypng.com optimizando la web
+    - Se verifica que no hay enlaces caidos
+    - Se corrige como se enlaza la web dentro de las misma
+    - Se coloca al titulo de la web un enlace que vuelve a la pagina de inicio
+    - Se corre Lighthouse resultados: 
+      > Performance 99% (Pequeño retraso en cargar, a verificar nuevamente)
+      > Accesibility 100%
+      > Best Prectices 93% (Fallo de seguridad por la inclusion de JS bootstrap, a verificar nuevamente)
+      > Seo 100%
   -->
 
 <!DOCTYPE html>
@@ -62,7 +74,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Titulo de la web -->
     <title>Asterix Computación</title>
+    <!-- Icono web -->
     <link rel="shortcut icon" type="image/ico" href="img/asterixLogo.png" />
+    <!-- Descripcion de la pagina -->
+    <meta
+      name="description"
+      content="Comercializacion de articulos para ordenadores. Especializados en monitores, perifericos y accesorios."
+    />
     <!-- Cargamos hoja de estilo bootstrap CDN-->
     <link
       rel="stylesheet"
@@ -91,16 +109,16 @@
           <img
             src="img/asterixLogo.png"
             class="rounded float-left d-none d-lg-block smallImg"
-            alt=""
+            alt="Imagen Logo"
           />
-          <a class="navbar-brand mr-auto"
+          <a class="navbar-brand mr-auto" href="index.html"
             ><h1 class="titleWeb">Asterix computación</h1></a
           >
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto p-2">
             <li class="nav-item active">
-              <a href="" class="nav-link">Inicio</a>
+              <a href="index.html" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -175,7 +193,7 @@
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <img
               src="img/tecladoMouseLogitech.png"
-              alt=""
+              alt="Combo teclado y mouse Logitech"
               class="img-responsive"
               width="100%"
             />
@@ -208,7 +226,7 @@
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <img
               src="img/tecladoMousegenerico2.png"
-              alt=""
+              alt="Combo teclado y mouse generico"
               class="img-responsive"
               width="100%"
             />
